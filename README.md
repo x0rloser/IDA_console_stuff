@@ -131,6 +131,11 @@ functions and variables.
 ## History
 In the event that I do any more updates of this package of files, the versions will be based on the date that the package was made available.
 
+### 2021/03/19
+* Fixed PS3 symbol handling (hopefully didnt break it in other parts.<br>
+  Previously symbol offsets ('st_value's) were added to their section start address if the SELF file was for PPU.<br>
+  This has been changed so that symbol offsets ('st_value's) are added to their section start address if the SELF file is a PRX (ie relocatable).<br>
+
 ### 2021/03/03
 Contains some PS3 fixes after various people starting using them and reported issues back to me.
 * Fixed 32bit ELF symbol handling (present in SPU files with symbols)
